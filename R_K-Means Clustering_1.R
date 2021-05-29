@@ -1,6 +1,7 @@
 data <- read.csv('D:/Bootcamp Data Science/Dibimbing/file/customer_movie_rating.csv')
 head(data)
 
+# summary data and check missing value
 summary(data)
 
 # b. Check outliers data with Multiple Boxplot
@@ -12,7 +13,7 @@ boxplot(data$Horror, data$Romcom, data$Action, data$Comedy, data$Fantasy,
         border = "brown"
 )
 
-# outliers data in Horror
+# outliers data in Romcom
 a <- boxplot(data$Romcom)
 a$out
 length(a$out)
